@@ -1,0 +1,142 @@
+!!!
+%html{lang: "en"}
+	%head
+		%meta{charset: "UTF-8"}
+		%meta{name: "viewport", content: "width=device-width, initial-scale=1, user-scalable=0"}
+		%meta{name: "keywords", content: "profile, design, portfolio, development, camera"}
+		%meta{name: "description", content: "Mich Parejosa Photograpy Profile"}
+		%meta{name: "author", content: "Herman Niño M. Luna IV"}
+
+		%title Mich | Photography
+		%link{rel: "icon", href: "../images/logo.ico"}
+		%link{rel: "stylesheet", href: "../css/style.css"}
+
+	%body
+		.loader
+			%svg.circular{height: "50", width: "50"}
+				%circle.path{cx: "25", cy: "25", r: "20", fill: "none", "stroke-width": "6", "stroke-miterlimit": "10"}
+
+		%nav
+			.nav-container
+				%img{src: "../images/logo.svg"}
+
+				%ul
+					%li
+						%a{href: "../index.html"} Home
+						%p Welcome
+					%li
+						%a{href: "#"} Profile
+						%p About Me
+						.bar
+					%li
+						%a{href: "portfolio.html"} Portfolio
+						%p My Works
+					%li.contactme
+						%a Contact
+						%p Hire Me
+
+			.mobile-container
+				%img{src: "../images/logo.svg"}
+
+				%ul
+					%li
+						%a.ion-android-home{href: "../index.html"}
+					%li.active
+						%a.ion-ios-person{href: "#"}
+					%li
+						%a.ion-code-working{href: "portfolio.html"}
+					%li.contactme
+						%a.ion-ios-telephone
+
+		%section.profile
+			.img
+			.details
+				.details-wrapper
+					%p.name 
+						Hayley Mich Parejosa
+						%i.ion-ios-camera
+						%i.ion-images
+						%i.ion-beer
+					%p.work Photographer / Model / Singer
+					.bar
+
+					%p.drama Growing up in the Nognog Rocky Place, my love of nature long preceded my love of photography. Being part of a family that appreciated and explored the outdoors helped me learn to appreciate and enjoy the landscape. Today I spend as much time as I can in nature hiking, backpacking, and wakeboarding. I enjoy traveling to new and exotic locations, especially to new mountain ranges. I would rather visit a jagged peak way off the map than struggle with crowds in a city any day. For me, photography is really just a by-product of spending so much time in nature. I think that spending time in the wilderness is just about the best thing one can do. I find a deep spirituality in nature and I hope for it to become evident in my photography. I put a lot of effort into these images and I hope that my passion for traveling and nature can translate into something special for the viewer. I also have a facebook page that contains lots of photographs and the stories behind them. Enjoy looking at my images!
+
+					%p.note Artists Statement
+
+					%p.aiming I aim to photograph the landscape in a way that will help others appreciate and care for it. I hope to express the deep spirituality that I find in nature and to bring back images to people that might not otherwise have an opportunity to witness the beauty.
+
+		%section.modal
+			.overlay
+			
+			%form
+				.bar
+				%img{src: "../images/contact.jpg"}
+				.close
+					%i.ion-android-close
+
+				.text
+					%p.title Let's talk?
+					%p.msg Send me a message. Thanks!
+
+				.container
+					%input{type: "email", placeholder: "Email", required: true}
+					%textarea{placeholder: "Message"}
+
+					%input{type: "submit", value: "Send Message"}
+
+		%footer
+			.container
+				.logo
+					%img{src: "../images/logo.svg"}
+					%p Copyright 2016. All Rights Reserved.
+
+				.links
+					%p.title Links
+					.bar
+
+					%ul
+						%li
+							%a{href: "../index.html"} Home
+						%li
+							%a{href: "#"} Profile
+						%li
+							%a{href: "portfolio.html"} Portfolio
+
+				.contact
+					%p.title Contact Details
+					.bar
+
+					%ul
+						%li Hayley Mich Parejosa
+						%li michparejosa@gmail.com
+						%li +63 939 067 7922
+						%li Makati, Philippines
+
+				.social
+					%p.title Social Media
+					.bar
+
+					.social-links
+						%a
+							%i.ion-social-facebook
+
+						%a
+							%i.ion-social-twitter
+
+						%a
+							%i.ion-social-tumblr
+
+						%a
+							%i.ion-social-pinterest-outline
+
+					%button.contactme Hire Me
+
+				.watermark
+					%p.watermark 
+						Mich
+						%span> Parejosa
+
+			.decor
+
+		%script{src: "../js/app-abt-dist.js"}

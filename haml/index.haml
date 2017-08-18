@@ -1,0 +1,207 @@
+!!!
+%html{lang: "en"}
+	%head
+		%meta{charset: "UTF-8"}
+		%meta{name: "viewport", content: "width=device-width, initial-scale=1, user-scalable=0"}
+		%meta{name: "keywords", content: "profile, design, portfolio, development, camera"}
+		%meta{name: "description", content: "Mich Parejosa Photograpy Profile"}
+		%meta{name: "author", content: "Herman Niño M. Luna IV"}
+
+		%title Mich | Photography
+		%link{rel: "icon", href: "images/logo.ico"}
+		%link{rel: "stylesheet", href: "css/style.css"}
+
+	%body
+		.loader
+			%svg.circular{height: "50", width: "50"}
+				%circle.path{cx: "25", cy: "25", r: "20", fill: "none", "stroke-width": "6", "stroke-miterlimit": "10"}
+
+		%nav
+			.nav-container
+				%img{src: "images/logo.svg"}
+
+				%ul
+					%li
+						%a{href: "#"} Home
+						%p Welcome
+						.bar
+					%li
+						%a{href: "html/profile.html"} Profile
+						%p About Me
+					%li
+						%a{href: "html/portfolio.html"} Portfolio
+						%p My Works
+					%li.contactme
+						%a Contact
+						%p Hire Me
+
+			.mobile-container
+				%img{src: "images/logo.svg"}
+
+				%ul
+					%li.active
+						%a.ion-android-home{href: "#"}
+					%li
+						%a.ion-ios-person{href: "html/profile.html"}
+					%li
+						%a.ion-code-working{href: "html/portfolio.html"}
+					%li.contactme
+						%a.ion-ios-telephone
+
+		%section.head
+			.img
+
+			.head-container
+				%p.motto Change your lens, change your story.
+				.head-bar
+				%p.name Hayley Mich Parejosa
+				%p.work Photographer / Model / Singer
+
+		%section.intro
+			.container
+				%p Hi. I'm mich. A simple photographer residing in Manila, Philippines. I have a deep passion in Photography. I believe that every photo has their own story. Let's make a story.
+
+				%button.contactme Hire Me
+			.decor
+
+		%section.make
+			%p.title 
+				Make Photography
+				%span Easy
+
+			.columns
+				%div
+					.icon
+						%i.ion-ios-people
+
+					%p.dtitle Easy to work with
+					%p.content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+				%div
+					.icon
+						%i.ion-ios-camera-outline
+
+					%p.dtitle Finish projects ahead in time
+					%p.content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+				%div
+					.icon
+						%i.ion-ios-monitor-outline
+
+					%p.dtitle Work Across Multiple Devices
+					%p.content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+		%section.showcase
+			%p.title 
+				Showcasing
+				%span Skills
+
+			.container
+				.images
+					%img{src: "images/portfolio/small/1.jpg"}
+
+					.desc
+						%p.dtitle Title
+						.bar
+						%p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+				.images.right
+					.desc
+						%p.dtitle Title
+						.bar
+						%p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+					%img{src: "images/portfolio/small/2.jpg"}
+
+				.images
+					%img{src: "images/portfolio/small/5.jpg"}
+
+					.desc
+						%p.dtitle Title
+						.bar
+						%p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+				.images.right
+					.desc
+						%p.dtitle Title
+						.bar
+						%p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+					%img{src: "images/portfolio/small/7.jpg"}
+
+				%button.seemore See More
+
+		%section.modal
+			.overlay
+			
+			%form
+				.bar
+				%img{src: "images/contact.jpg"}
+				.close
+					%i.ion-android-close
+
+				.text
+					%p.title Let's talk?
+					%p.msg Send me a message. Thanks!
+
+				.container
+					%input{type: "email", placeholder: "Email", required: true}
+					%textarea{placeholder: "Message"}
+
+					%input{type: "submit", value: "Send Message"}
+
+		%footer
+			.container
+				.logo
+					%img{src: "images/logo.svg"}
+					%p Copyright 2016. All Rights Reserved.
+
+				.links
+					%p.title Links
+					.bar
+
+					%ul
+						%li
+							%a{href: "#"} Home
+						%li
+							%a{href: "html/profile.html"} Profile
+						%li
+							%a{href: "html/portfolio.html"} Portfolio
+
+				.contact
+					%p.title Contact Details
+					.bar
+
+					%ul
+						%li Hayley Mich Parejosa
+						%li michparejosa@gmail.com
+						%li +63 939 067 7922
+						%li Makati, Philippines
+
+				.social
+					%p.title Social Media
+					.bar
+
+					.social-links
+						%a
+							%i.ion-social-facebook
+
+						%a
+							%i.ion-social-twitter
+
+						%a
+							%i.ion-social-tumblr
+
+						%a
+							%i.ion-social-pinterest-outline
+
+					%button.contactme Hire Me
+
+				.watermark
+					%p.watermark 
+						Mich
+						%span> Parejosa
+
+			.decor
+
+		%script{src: "js/app-dist.js"}
